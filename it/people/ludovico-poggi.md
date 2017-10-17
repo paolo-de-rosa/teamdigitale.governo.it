@@ -19,8 +19,7 @@ Professionalmente sono nato e cresciuto in quel cantiere di idee che è lavoce.i
 
 Durante i dieci anni a Lavoce ho sperimentato altri lavori e in diversi campi: reporter per elezioni straniere (Grecia, Catalogna), caporedattore di una testata web di gender economy, curatore di un questionario qualitativo sull’utilizzo di internet nelle aziende lombarde (di fatto, il mio primo approccio ai temi di competenza del Team Digitale), consulente per la creazione e lo sviluppo di un sito della Pubblica Amministrazione (di fatto, il mio primo approccio con la PA), editor di un libro di proposte di governo in ambito politico economico.
 
-È stato questo libro, e il rapporto di amicizia negli anni successivi con l’autore, a strapparmi da una Milano in pieno Rinascimento e portarmi a Roma, da sempre la mia seconda città: nel febbraio 2016 sono diventato portavoce del Sottosegretario alla Presidenza del Consiglio con delega all’economia,
-lavoro, povertà e ricerca Tommaso Nannicini.
+È stato questo libro, e il rapporto di amicizia negli anni successivi con l’autore, a strapparmi da una Milano in pieno Rinascimento e portarmi a Roma, da sempre la mia seconda città: nel febbraio 2016 sono diventato portavoce del Sottosegretario alla Presidenza del Consiglio con delega all’economia, lavoro, povertà e ricerca Tommaso Nannicini.
 
 Il passaggio a Palazzo Chigi è stata un’esperienza lavorativa incredibile da cui ho appreso, insieme a molte altre cose, quanto un conto sia discutere e valutare la politica di un Governo, un altro realizzarla.
 
