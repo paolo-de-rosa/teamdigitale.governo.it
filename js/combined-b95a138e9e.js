@@ -4680,22 +4680,15 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
     function (e, t) {
         e(document).ready(function () {
             e("html").removeClass("no-js")
-        }), e("pre").each(function n() {
-            n.count = n.count ? n.count + 1 : 1;
-            var t = "code-collapse-" + n.count,
-                i = "Mostra il codice",
-                o = "Nascondi il codice",
-                r = e('<a class="lg-example-toggle btn btn-primary" role="button" data-toggle="collapse" href="#' + t + '"  aria-expanded="false" aria-controls="' + t + '">' + i + "</a>");
-            e(this).before('<div class="lg-example-result">' + e(this).text() + "</div>").before(r).wrap('<div class="lg-example-code collapse" id="' + t + '"></div>'), r.on("click", function () {
-                e(this).text(e(this).text() === i ? o : i)
-            })
         }), e(document).ready(function () {
             e('[data-toggle="offcanvas"]').click(function (t) {
                 t.preventDefault(), e(".row-offcanvas").toggleClass("active"), e(this).toggleClass("active")
             })
         }), e(document).ready(function () {
             e(".row-offcanvas").click(function (t) {
-                e(this).is(".active") && e(this).removeClass("active")
+                if(e(this).is(".active")) {
+                    e('[data-toggle="offcanvas"]').click().focus()
+                }
             })
         }), e(document).keyup(function (t) {
             27 === t.which && e('[data-toggle="offcanvas"]').click().focus()
@@ -4779,5 +4772,17 @@ $(document).ready(function () {
         var index = $(this).index();
         $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
         $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+    });
+    // jobs accordion
+    $('#jobaccordion_list a[data-target]').click(function(event){
+        event.preventDefault();
+        var $li = $(this).parent();
+        var divTargetData = $(this).data('target');
+        var $divTarget = $(divTargetData);
+        $li.toggleClass('selected');
+        $li.siblings().removeClass('selected');
+        $divTarget.removeClass('hidden');
+        $divTarget.siblings().addClass('hidden');
+        
     });
 });

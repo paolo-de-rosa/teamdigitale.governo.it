@@ -1,0 +1,45 @@
+{% capture proj_page_content %}
+<h2>{{ page.title }}</h2>
+{% if page.people != nil %}
+	<div class="row project__people">
+	{% for ppage in page.people %}
+		{% assign coldim = "12|12|4|4|3|4|4" | split: "|" %}
+		{% assign same_lang_pages = site.pages | where: "lang", page.lang %}
+		{% assign people_pages = same_lang_pages | where: "ref", ppage %}
+
+		{% for person in people_pages %}
+			{% assign fixedperiod = page.people_fixed_period | where: "ref", person.ref | first %}
+			<article class="col-sm-{{coldim[page.people.size]}} project__people__person">
+				<a href="{{ person.url }}">
+	                <img class="img-circle img-responsive" src="/images/team/{{ person.ref }}.jpg" alt="{{ person.title }}">
+	            </a>
+				<h1 class="h4"><a href="{{ person.url }}">{{person.title}}</a></h1>
+				<h2 class="h5">{{person.role}}</h2>
+				
+			</article>
+		{% endfor %}
+	{% endfor %}
+	</div>
+
+{% endif %}
+
+<div class="row">
+<div class="col-md-9">
+	{{ content }}
+	
+
+</div>
+<div class="hidden-xs hidden-sm col-md-3">
+	<div class="section-nav__wrapper">
+		{{ content | toc_only }}
+	</div>
+
+</div>
+
+</div>
+{% if page.timeline != nil %}
+	{% include project_timeline.html %}
+{% endif %}
+
+{% endcapture %}
+{% include layout_base.html content=proj_page_content %}

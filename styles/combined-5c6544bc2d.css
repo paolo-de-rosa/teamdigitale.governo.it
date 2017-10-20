@@ -7773,9 +7773,6 @@ body, html {
     overflow-x: hidden;
 }
 
-body {
-    padding-top: 195px;
-}
 
 .nav {
     padding-bottom: 50px;
@@ -7989,9 +7986,7 @@ body {
         transform: translate3d(0, 0, 0);
     }
 
-    body {
-        padding-top: 60px;
-    }
+
     /**/
     .footer__logo {
         width: 4rem;
@@ -8045,8 +8040,7 @@ body {
     }
 
     .navbar {
-        top: 50px;
-        padding-top: .5rem;
+        padding-top: 2.5rem;
         padding-bottom: .5rem;
         height: auto;
     }
@@ -8117,10 +8111,6 @@ body {
 }
 
 .nav-banner {
-    position: fixed;
-    z-index: 99999;
-    top: 0;
-    left: 0;
     width: 100%;
     height: auto;
     background: #013366;
@@ -8239,12 +8229,12 @@ body {
     }
 
 footer {
-    background: #30373d;
+    background: #00264d!important;
     color: #a5abb0;
     min-height: 200px;
     min-height: 20rem;
     padding: 1rem;
-    padding-top: 28px;
+    padding-top: 35px;
     padding-top: 2.8rem;
 }
 
@@ -8270,7 +8260,7 @@ footer {
         margin-top: 50px;
         margin-top: 5rem;
         padding: 0;
-        border-top: 1px solid #444e57;
+        border-top: 1px solid #004080;
     }
 
 
@@ -8354,6 +8344,8 @@ footer {
 #main {
     /*min-height: 500px;
     min-height: 50rem;*/
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 [tabindex="0"]:focus {
@@ -8818,13 +8810,13 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
 }
 /*  bhoechie tab */
 
-#navbar > div.text-center > a {
+#navbar .navbar-top-link__item a {
     color: white;
     text-decoration: none;
-    padding: 0 6px;
+    padding: 0 5px;
 }
 
-    #navbar > div.text-center > a.active {
+    #navbar .navbar-top-link__item a.active {
         background-color: #1F77D2;
         color: white;
     }
@@ -8856,7 +8848,7 @@ a.anchor {
 }
 /*Revisions */
 article {
-    max-width: 775px !important;
+    /*VF max-width: 775px !important;*/
     margin: 0,0, 35px, 0;
 }
 
@@ -8891,6 +8883,12 @@ p {
 @media screen and (max-width:767px) {
     body {
         font-size: 18px;
+    }
+    #main {
+    /*min-height: 500px;
+    min-height: 50rem;*/
+        padding-right: 15px;
+        padding-left: 15px;
     }
 
     .team-bar {

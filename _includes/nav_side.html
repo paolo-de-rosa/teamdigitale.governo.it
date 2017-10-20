@@ -6,19 +6,39 @@ tutte le pagine del sito che:
 {% endcomment %}
 {% assign same_lang_pages = (site.html_pages | where: "lang", page.lang %}
 {% assign sorted_pages = (same_lang_pages | sort: "menu_position") %}
-<div class="row row-offcanvas row-offcanvas-left">
+<div class="row row-offcanvas row-offcanvas-right">
     <div id="sidebar" class="sidebar-offcanvas">
         <nav data-offset-bottom="250" data-offset-top="0" data-spy="_affix" tabindex="0" id="menu" class="hidden-print">
             <h2 class="sr-only">{{ site.data.t.DigitalTransformationTeam[page.lang] }}</h2>
             <ul class="nav navmenu">
                 {% for menu_page in sorted_pages %}
                   {% if menu_page.parent_ref == nil and menu_page.menu_position != nil %}
-                    <li>
+                    <li class="sidenav-menu-item {{ menu_page.ref }}">
                         <a href="{{ menu_page.url }}">{{ menu_page.title }}</a>
                     </li>
                   {% endif %}
                 {% endfor %}
+                {% if page.lang=='en' %}
+                    <li><a href="/en/i7.html" 
+                      {% if page.ref=='i7' %}class="active"{% endif %}
+                      >Innovation7@G7</a>
+                    </li>
+                    <li><a href="/en/tallinn-conference.html" 
+                      {% if page.ref=='tallinn-conference' %}class="active"{% endif %}
+                      >EU - DTT</a>
+                    </li>
+                  {% endif %}
+                  {% if page.lang=='it' %}
+                    <li>
+                      <a href="https://hack.developers.italia.it/" target="_blank">Hack Developers</a>
+                    </li>
+                    <li><a href="/en/i7.html" 
+                      {% if page.ref=='i7' %}class="active"{% endif %}
+                      >Find out about the Innovation 7</a>
+                    </li>
+                  {% endif %}
             </ul>
         </nav>
     </div>
+
 </div>
