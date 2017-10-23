@@ -9,16 +9,28 @@ it:
     url: '#'
     liClass: 'Megamenu-item Megamenu-item--vert'
     subitems:
-    - title: SPID
-      url: /it/spid
-    - title: dati.gov.it
-      url: /it/datigov
-    - title: ANPR
-      url: /it/anpr
-    - title: CIE
-      url: /it/cie
+    - title: Anagrafe Nazionale Popolazione Residente (ANPR)
+      url: /it/projects/anpr.htm
+    - title: Ecosistema di API
+      url: it/projects/api.htm
+    - title: Codice Amministrazione Digitale (CAD)
+      url: /it/projects/cad.htm
+    - title: Cittadinanza digitale
+      url: /it/projects/cittadinanza-digitale.htm
+    - title: Data Analytics Framework (DAF)
+      url: /it/projects/daf.htm
+    - title: Designers Italia
+      url: /it/projects/designers.htm
+    - title: Developers Italia
+      url: /it/projects/developers.htm
+    - title: Sistema Pubblico di Identita Digitale (SPID)
+      url: /it/projects/identita-digitale.htm
+    - title: Pagamenti digitali PagoPA
+      url: /it/projects/pagamenti-digitali.htm
+    - title: Piano trasformazione digitale
+      url: /it/projects/trasformazione-digitale.htm
     - title: Tutti i progetti
-      url: /it/progetti
+      url: /it/progetti.htm
       liClass: 'Megamenu-showAll'
 
 en:

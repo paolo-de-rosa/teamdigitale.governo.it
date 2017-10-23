@@ -47,8 +47,8 @@ data-tag values :
 
 <script id="built-in-helpers-template" type="text/x-handlebars-template">
 
-    <blockquote class="iPress-blockquote i-background-grey-10">
-        <h3>
+    <blockquote class="iPress-blockquote u-background-white">
+        <h3 class="u-padding-top-m u-padding-bottom-m">
            {{ site.data.t.PressRelease[page.lang] }}
         </h3>
         {% raw %}
@@ -57,14 +57,14 @@ data-tag values :
             <div class="row">
                 <div class="col-md-12">
                     <p class="team-item-title">
-                        <a href="{{this.link}}" target="_blank" style="text-decoration: none;">
+                        <a href="{{this.link}}" target="_blank" >
                             {{this.title}} ({{formatDate this.publishDate this.lang}})
                         </a>
                     </p>
-                    <a href="{{this.link}}" target="_blank" style="text-decoration: none;">
-                    <img src="{{this.defaultImage.small}}" class="i-floatLeft i-margin-r-right">
-                    </a>
                     <p class="i-text-r-xxs">
+                        <a href="{{this.link}}" target="_blank" class="u-float-left">
+                        <img src="{{this.defaultImage.small}}" alt="{{this.title}}">
+                        </a>
                         {{this.summary}}
                     </p>
                     <p style="clear:both;">&nbsp;</p>

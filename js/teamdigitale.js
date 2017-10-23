@@ -57,10 +57,5 @@ $(function() {
 	// monday for project-page
 	$('#getmonday').text( getMonday(new Date()) );
 
-	// Sticky nav 
-	$('.section-nav__wrapper').stickySidebar({
- 		containerSelector: '#main',
-		innerWrapperSelector: '.section-nav'
-  	});
 
 });
